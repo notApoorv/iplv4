@@ -1,0 +1,32 @@
+<head>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<div id="container2" >
+	<thead>
+		<tr>
+			<th>Label</th>
+			<th>Team</th>
+			<th>City</th>
+			<th>Coach</th>
+			<th>Home</th>
+		</tr>
+	</thead>
+
+	<tbody id="tab">
+		<tr *ngFor="let dat of list">
+			<td>{{dat.label}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>{{dat.team}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>{{dat.home}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>{{dat.coach}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>{{dat.city}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		</tr>
+	</tbody>
+</div>
+
+<div *ngIf="loading else loaded" id="load">
+    <img src="https://i.ibb.co/MfKyv2D/Pulse-1s-177px.gif">
+</div>
+<div id="chart_div2"></div>
+
+<div id="pop"></div>

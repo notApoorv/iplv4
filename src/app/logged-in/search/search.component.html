@@ -1,0 +1,30 @@
+<h3 id="selText">Search Player:</h3>
+
+<form>
+	<div class="form-group" id="searchBox">
+		<input class="form-control" id="SB" placeholder="Enter player name" (keydown)="keyDownFunction($event)">
+	</div>
+</form>
+
+<div *ngIf="loading else loaded" id="load">
+    <img src="https://i.ibb.co/MfKyv2D/Pulse-1s-177px.gif">
+</div>
+
+<table id="tab3" class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Team</th>
+      <th scope="col">Role</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+	<tr *ngFor="let book of mat">
+		<td >{{book.name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td >{{book.label}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td >{{book.role}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td >{{book.price}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	</tr>
+  </tbody>
+</table>

@@ -1,0 +1,42 @@
+#selText
+{
+  font-family: Raleway;
+  font-size: 25px;
+  position: absolute;
+  margin-left:380px;
+  margin-top:44px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+#searchBox
+{
+  width:25vw;
+  margin:auto;
+  margin-top:40px;
+}
+
+#tab3
+{
+  margin:auto;
+  margin-top:50px;
+  max-width: 75vw;
+  z-index:-10;
+}
+
+#tab3 tr:nth-child(even) 
+{
+  background-color: #eee;
+}
+#tab3 tr:nth-child(odd) 
+{
+  background-color: #fff;
+}
+
+#load
+{
+  z-index: 50;
+  transform:scale(0.45);
+  margin-left:42vw;
+  margin-top:10vh;
+  position: fixed;
+}

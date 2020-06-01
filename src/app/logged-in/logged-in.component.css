@@ -1,0 +1,73 @@
+#buttGroup
+{
+  margin-left:40.75vw;
+  margin-top:20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+    #IPLogo
+    {
+        transform: scale(2.2);
+        margin-top:-10px;
+    }
+
+    #PS
+    {
+        font-family: Raleway;
+        font-size: 20px;
+    }
+
+    #TS
+    {
+        font-family: Raleway;
+        font-size: 20px;
+    }
+
+    #NB
+    {
+      background: linear-gradient(to left, rgba(255,255,255,0) 20%,
+              rgba(255,255,255,1)), url(https://i.ibb.co/7j2rjzG/Book-Grounds-in-Delhi-NCR-Gurgaon-Online-Sportsground-co-in.jpg);
+
+  
+    }
+
+    #LO
+    {
+      font-family: Raleway;
+        font-size: 20px;
+      color: white;
+    }
+
+    #tab
+    {
+        margin:auto;
+        margin-top:50px;
+        border: 1px solid black;
+        
+        border-spacing: 5px;
+        font-family: Raleway;
+        font-size: 15px;
+        
+    } 
+
+
+
+    #tab tr:nth-child(even) 
+    {
+        background-color: #eee;
+    }
+    #tab tr:nth-child(odd) 
+    {
+        background-color: #fff;
+    }
+
+    #container
+    {
+      position: absolute;
+      transform: scale(.5);
+      margin-top:100px;
+      
+    }
+
+    

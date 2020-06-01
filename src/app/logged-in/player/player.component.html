@@ -1,0 +1,101 @@
+<head>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+
+
+<h3 id="selText">Select Team:</h3>
+
+
+<form>
+	<div class="form-group" id="teamSelector">
+		<select class="form-control" id="slct1" (change)="dispTab()"></select>
+	</div>
+</form>
+
+
+<div id="chart_div"></div>
+
+<div *ngIf="loading else loaded" id="load">
+    <img src="https://i.ibb.co/MfKyv2D/Pulse-1s-177px.gif">
+</div>
+
+
+
+<div id="gridCont">
+	<div id="gridBox" style="overflow-y: auto; height:80vh;">
+		<div class="row">
+			<div class="col-auto mb-3" *ngFor="let book of list">
+				<div class="card border-dark" style="width: 14rem; padding-left:10px;">
+					<div class="card-body">
+						<h5 class="card-title rlwy">{{book.name}}</h5>
+						<p class="card-text rlwy">
+							{{book.role}}
+							<br>
+							<br>
+              {{book.price}}
+            </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="batChart">
+
+	<div id="batBox" style="overflow-y: auto; height:50vh;">
+    <div id="cross" (click)="closeBat()">&#10005;&nbsp;&nbsp;</div>
+    <table id="tab2">
+		  <tr *ngFor="let book of list">
+        <td *ngIf="book.role=='Batsman'">{{book.name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        
+        <td *ngIf="book.role=='Batsman'">{{book.price}}</td>
+        <br *ngIf="book.role=='Batsman'">
+        <br *ngIf="book.role=='Batsman'">
+		  </tr>
+    </table>
+	</div>
+</div>
+
+<div id="bowChart">
+<div id="batBox" style="overflow-y: auto; height:50vh;">
+    <div id="cross" (click)="closeBow()">&#10005;&nbsp;&nbsp;</div>
+    <table id="tab2">
+		  <tr *ngFor="let book of list">
+        <td *ngIf="book.role=='Bowler'">{{book.name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td *ngIf="book.role=='Bowler'">{{book.price}}</td>
+        <br *ngIf="book.role=='Bowler'">
+        <br *ngIf="book.role=='Bowler'">
+		  </tr>
+    </table>
+	</div>
+</div>
+
+<div id="allChart">
+<div id="batBox" style="overflow-y: auto; height:50vh;">
+    <div id="cross" (click)="closeAll()">&#10005;&nbsp;&nbsp;</div>
+    <table id="tab2">
+		  <tr *ngFor="let book of list">
+        <td *ngIf="book.role=='All-Rounder'">{{book.name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td *ngIf="book.role=='All-Rounder'">{{book.price}}</td>
+        <br *ngIf="book.role=='All-Rounder'">
+        <br *ngIf="book.role=='All-Rounder'">
+		  </tr>
+    </table>
+	</div>
+</div>
+<div id="wicChart">
+<div id="batBox" style="overflow-y: auto; height:50vh;">
+    <div id="cross" (click)="closeWic()">&#10005;&nbsp;&nbsp;</div>
+    <table id="tab2">
+		  <tr *ngFor="let book of list">
+        <td *ngIf="book.role=='Wicket Keeper'">{{book.name}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td *ngIf="book.role=='Wicket Keeper'">{{book.price}}</td>
+        <br *ngIf="book.role=='Wicket Keeper'">
+        <br *ngIf="book.role=='Wicket Keeper'">
+		  </tr>
+    </table>
+	</div>
+</div>

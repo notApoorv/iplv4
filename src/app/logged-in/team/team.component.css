@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+#tab
+    {
+        margin:auto;
+        margin-top:50px;
+        border: 1px solid black;
+        
+        border-spacing: 5px;
+        font-family: Raleway;
+        font-size: 15px;
+        
+    } 
+
+
+
+    #tab tr:nth-child(even) 
+    {
+        background-color: #eee;
+    }
+    #tab tr:nth-child(odd) 
+    {
+        background-color: #fff;
+    }
+
+    #container2
+    {
+      position: absolute;
+      transform: scale(1.2);
+      margin-left:19vw;
+      margin-top:30px;
+      
+    }
+
+    #chart_div2
+    {
+      margin-left:20vw;
+      margin-top:300px;
+    }
+
+#load
+{
+  z-index: 50;
+  transform:scale(0.45);
+  margin-left:650px;
+  margin-top:30vh;
+  position: fixed;
+}

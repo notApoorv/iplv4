@@ -1,0 +1,43 @@
+#cnt
+{
+  width: 28vw;
+  margin-left:100px;
+}
+
+#out
+{
+  margin-left:100px;
+}
+
+#loginCard
+{
+  margin-left:100px;
+  opacity:0.9;
+}
+
+#loginCard:focus-within
+{
+ transform: scale(1.03);
+  opacity:1;
+}
+
+#wrongIDContainer
+{
+    visibility: hidden;
+}
+
+
+
+
+
+
+#bd
+  {
+    background: url(https://i.ibb.co/JR4fQtg/tuxpi-com-1590849215.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+   
+             
+  }
